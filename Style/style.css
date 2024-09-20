@@ -9,7 +9,7 @@ h1 {
 hr {
     border: none;
     height: 2px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #424242, #474747);
     margin: 20px 0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
