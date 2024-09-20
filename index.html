@@ -7,7 +7,24 @@
     <title>Ario's Site</title>
 </head>
 <body>
-    <h1>Welcome To Ario's Website</h1>
+    <h1 id="title">Welcome To Ario's Website</h1>
     <hr>
+    <h3>Coming Soon...</h3>
 </body>
 </html>
+
+<script>
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        var str = 'Welcome To Ario\'s Website';
+        document.getElementById("title").textContent = '';
+        async function typewriteTitle() {
+            for (let i = 0; i < str.length; i++) {
+            document.getElementById("title").textContent += str.charAt(i);
+            await sleep(200);
+            }
+        }
+        typewriteTitle();
+</script>
